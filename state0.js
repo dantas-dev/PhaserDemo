@@ -13,8 +13,7 @@ demo.state0.prototype = {
     //PHYSICS game
     game.physics.startSystem(Phaser.Physics.ARCADE);
         
-    game.stage.backgroundColor = '#800080';
-    console.log('Stage0');     
+    game.stage.backgroundColor = '#800080';     
         
     addChangeStateEventListeners();
     
@@ -66,6 +65,7 @@ demo.state0.prototype = {
 
 function changeState(i,stateNumber){
     //console.log(i);
+    console.log('state'+ stateNumber);
     game.state.start('state' + stateNumber);
 }
 
